@@ -102,14 +102,14 @@ h2{
 }
 .info {
 }
-.info .text{
+.info .card__content{
     display: block;
     text-align: left;
     padding: 20px;
     height: 110px;
     width: 400px;
     border-radius: var(--border-radius);
-    background: var(--block-color);
+    background: #DBD9D7;
 }
 
 .inner-info {
@@ -179,65 +179,9 @@ button[type="submit"]:hover {
     background-color: var(--font-color);
     color: white
 }
- /*salad*/
 .picture img{
     border:solid;
     width: 50%;
 }
 
-/* Set Media Query */
-/*@media screen and (min-width: 768px) {
-    nav .logo {
-        font-size: 18px;
-    }
-    nav ul li a {
-        padding: 10px 12px;
-        font-size: 15px;
-    }
-    .inner-info {
-        grid-template-columns: repeat(2, 1fr);
-        place-items: center;
-    }
-    .inner-content {
-        margin: 20px;
-    }
-    .details .card {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 50px;
-    }
-    .contact {
-        padding: 80px 0;
-        text-align: center;
-    }
-    .contact-details {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .form {
-        margin: 10px 0;
-        text-align: center;
-    }
-}
-
-
-@media screen and ( max-width: 400px) {
-    nav .logo {
-        font-size: 16px;
-    }
-    nav ul li a {
-        padding: 8px 10px;
-        font-size: 13px;
-    }
-    .inner-info {
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-    .inner-content .card p{
-        width: 400px;
-    }
-    .inner-part, .form {
-        margin: 20px;
-    }
-}*/
 /*# sourceMappingURL=style.css.map */
