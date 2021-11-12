@@ -129,13 +129,13 @@ h2{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .contact-text{
     text-align: center;
+    padding: 20px;
 }
-.container {
+.form-container {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -143,7 +143,6 @@ h2{
     box-shadow: 0px 0px 20px #00000010;
     background-color: white;
     border-radius: var(--border-radius);
-    margin-bottom: 20px;
 }
 .form-group {
     width: 100%;
@@ -162,7 +161,7 @@ textarea {
     resize: vertical;
 }
 button[type="submit"] {
-    width: 80%
+    width: 100%;
     border: none;
     outline: none;
     padding: 15px;
@@ -172,7 +171,7 @@ button[type="submit"] {
     color: var(--text-color);
     text-align: center;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
     transition: 0.3s ease background-color;
 }
 button[type="submit"]:hover {
@@ -196,13 +195,11 @@ button[type="submit"]:hover {
 }
 
 .page-wrapper {
-  display: -ms-grid;
   display: grid;
   grid-columns: (300px)[3];
   grid-template-columns: repeat(3, 300px);
-  column-gap: 2rem;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
   grid-auto-rows: 120px;
   grid-template-areas: " s f f"
  " s f f"
@@ -211,7 +208,7 @@ button[type="submit"]:hover {
  " . c c";
 }
 
-.page-wrapper .account-sidebar {
+.page-wrapper .page-account-sidebar {
   margin-left: 3rem;
   margin-right: 3rem;
   grid-row: 1;
@@ -234,33 +231,33 @@ button[type="submit"]:hover {
   align-items: center;
 }
 
-.page-wrapper .account-sidebar .profile-avatar {
+.page-wrapper .page-account-sidebar .page-profile-avatar {
   height: 150px;
   width: 150px;
 }
 
-.page-wrapper .account-sidebar .profile-avatar img {
+.page-wrapper .page-account-sidebar .page-profile-avatar img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
 }
 
-.page-wrapper .account-sidebar .sidebar-content ul {
+.page-wrapper .page-account-sidebar .page-account-sidebar-content ul {
   list-style: none;
 }
 
-.page-wrapper .account-sidebar .sidebar-content ul li img {
+.page-wrapper .page-account-sidebar .page-account-sidebar-content ul li img {
   height: 25px;
   width: 25px;
 }
 
-.page-wrapper .account-sidebar .sidebar-content ul a {
+.page-wrapper .page-account-sidebar .page-account-sidebar-content ul a {
   text-decoration: none;
   color: #40362E;
   font-size: 1rem;
 }
 
-.page-wrapper .account-sidebar .logout-button button {
+.page-wrapper .page-account-sidebar .logout-button button {
   background-color: #40362E;
   padding: 0.8rem 2.5rem;
   border: none;
@@ -269,12 +266,12 @@ button[type="submit"]:hover {
   border-radius: 10px;
 }
 
-.page-wrapper .account-sidebar .logout-button button a {
+.page-wrapper .page-account-sidebar .logout-button button a {
   text-decoration: none;
   color: #eceae8;
 }
 
-.page-wrapper .account-page-info {
+.page-wrapper .page-account-info {
   grid-row: 1;
   grid-row-span: 2;
   grid-column: 2;
@@ -284,7 +281,7 @@ button[type="submit"]:hover {
   padding: 1rem;
 }
 
-.page-wrapper .account-page-info .account-upload {
+.page-wrapper .page-account-info .page-account-upload {
   height: 100%;
   border: 1px solid #40362E;
   border-radius: 10px;
@@ -300,18 +297,18 @@ button[type="submit"]:hover {
   justify-content: space-between;
 }
 
-.page-wrapper .account-page-info .account-upload input[name="post"] {
+.page-wrapper .page-account-info .page-account-upload input[name="post"] {
   margin-top: 1rem;
   margin-left: 2rem;
   border: none;
 }
 
-.page-wrapper .account-page-info .account-upload .uploaded {
+.page-wrapper .page-account-info .page-account-upload .page-account-uploaded {
   flex-item-align: end;
   align-self: flex-end;
 }
 
-.page-wrapper .account-page-info .account-upload button {
+.page-wrapper .page-account-info .page-account-upload button {
   margin-right: 1rem;
   margin-bottom: 1rem;
   background-color: #40362E;
@@ -322,7 +319,7 @@ button[type="submit"]:hover {
   text-align: center;
 }
 
-.page-wrapper .account-page-info .account-upload button a {
+.page-wrapper .page-account-info .page-account-upload button a {
   text-decoration: none;
   color: #eceae8;
 }
