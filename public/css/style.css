@@ -32,7 +32,6 @@ body{
     line-height: var(--normal-line-height);
     color: var(--text-color);
 }
-@media screen and (max-width: 1260px){}
 nav{
     height: 11vh;
     width: 100%;
@@ -71,19 +70,18 @@ nav ul li a:hover
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("./img/bannerbg2.jpg");
     width: 100%;
 }
-.banner .inner-text {
+.banner .banner__inner-text {
     position:absolute; left:600px; top:300px;
     font-family: Calibri;
     color: whitesmoke;
-
 }
 
-.inner-text h1 {
+.banner__inner-text h1 {
     font-size: var(--heading-font);
     line-height: 3rem;
 }
 
-.inner-text p {
+.banner__inner-text p {
     font-size: var(--normal-font-size);
 }
 
@@ -344,4 +342,9 @@ button[type="submit"]:hover {
   text-align: center;
   font-size: 1rem;
 }
+@media screen and (max-width: 400px) {
+
+}
+@media screen and (max-width: 800px) {
+
 /*# sourceMappingURL=style.css.map */
