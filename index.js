@@ -12,7 +12,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
-
 //MongoDB connection
 mongoose.connect(
     `${url}`, { useNewUrlParser: true, useUnifiedTopology: true },
@@ -22,5 +21,19 @@ mongoose.connect(
             : console.log(`Successfully connected to the database`);
     }
 );
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));
+//MongoDB Schema
+const { Schema } = mongoose;
+const UserSchema = new Schema(
+    {
+        firstName: { type: String, required: true },
+        lastName: { type: String, required: true },
+        email: { type: String, required: true, unique: true },
+        password: { type: String, required: true },
+    },
+    { timestamps: true }
+);
 
+const User = mongoose.model("User", UserSchema);
+module.exports = User;
+
+app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));
