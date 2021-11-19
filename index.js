@@ -43,7 +43,7 @@ const UserSchema = new Schema(
 );
 const User = mongoose.model("User", UserSchema);
 module.exports = User;
-const myForm = document.getElementById("my-form");
+/*const myForm = document.getElementById("my-form");
 
 if (window.location.href.includes("login")) {
     const errorDisplay = document.getElementById("status");
@@ -53,5 +53,5 @@ if (window.location.href.includes("login")) {
         const email = document.querySelector('input[name="email"]').value;
         const password = document.querySelector('input[name="password"]').value;
     });
-}
+}*/
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));
