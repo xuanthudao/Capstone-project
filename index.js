@@ -12,6 +12,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
+app.use(
+    session({secret: "secret", cookie: {
+            maxAge: 1000 * 60 * 60 * 24 * 7,
+        },
+        resave: true,
+        saveUninitialized: false,
+    })
+);
+
 //MongoDB connection
 mongoose.connect(
     `${url}`, { useNewUrlParser: true, useUnifiedTopology: true },
@@ -32,8 +41,17 @@ const UserSchema = new Schema(
     },
     { timestamps: true }
 );
-
 const User = mongoose.model("User", UserSchema);
 module.exports = User;
+const myForm = document.getElementById("my-form");
 
+if (window.location.href.includes("login")) {
+    const errorDisplay = document.getElementById("status");
+    myForm.addEventListener("submit", async (e) => {
+        errorDisplay.textContent = "";
+        e.preventDefault(); //don't send form if empty input
+        const email = document.querySelector('input[name="email"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+    });
+}
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));
