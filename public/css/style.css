@@ -1,3 +1,23 @@
+:root {
+  /*colors*/
+  --background-color: #F2E5D5;
+  --font-color: #595047;
+  --text-color: #40362E;
+  --block-color: #eceae8;
+
+  /*font*/
+  --font-family: Montserrat;
+  --normal-line-height: 1.5rem;
+  --h2-line-height: 2rem;
+  --normal-font-size: 16px;
+  --heading-font: 3rem;
+
+  /*img*/
+  --normal-size-img:400px;
+  --medium-size-img:200px;
+  --small-size-img:100px;
+  --border-radius: 10px;
+}
 *{
     margin: 0;
     box-sizing: border-box;

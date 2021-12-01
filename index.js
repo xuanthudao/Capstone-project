@@ -9,7 +9,7 @@ const {PORT = 4000} = process.env;
 //middlewares
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+/*app.use(express.urlencoded({ extended: false }));*/
 app.use(express.static("public"));
 
 app.use(
@@ -43,15 +43,30 @@ const UserSchema = new Schema(
 );
 const User = mongoose.model("User", UserSchema);
 module.exports = User;
-/*const myForm = document.getElementById("my-form");
 
-if (window.location.href.includes("login")) {
-    const errorDisplay = document.getElementById("status");
-    myForm.addEventListener("submit", async (e) => {
-        errorDisplay.textContent = "";
-        e.preventDefault(); //don't send form if empty input
-        const email = document.querySelector('input[name="email"]').value;
-        const password = document.querySelector('input[name="password"]').value;
-    });
-}*/
+/*const myForm = document.getElementById("my-form");
+const email = document.querySelector('input[name="email"]').value;
+const password = document.querySelector('input[name="password"]').value;*/
+
+/*//create user
+const createUser = async ({ firstName, lastName, email, password }) => {
+    try {
+        let newUser = new User();
+        newUser.firstName = firstName;
+        newUser.lastName = lastName;
+        newUser.email = email;
+        newUser.password = password;
+        if (await newUser.save()) {
+            return [true, newUser];
+        }
+    }
+};
+
+const checkUserByEmail = async (email) => await User.findOne({ email });
+
+//To validate user password
+const validatePassword = async (formPassword, dbPassword) =>
+    await compare(formPassword, dbPassword);*/
+
+
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));
