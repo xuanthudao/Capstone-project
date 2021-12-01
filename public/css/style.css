@@ -136,7 +136,7 @@ h2{
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0px 0px 20px #00000010;
+    box-shadow: 0 0 20px #00000010;
     background-color: white;
     border-radius: var(--border-radius);
 }
@@ -208,22 +208,17 @@ button[type="submit"]:hover {
   margin-left: 3rem;
   margin-right: 3rem;
   grid-row: 1;
-  grid-row-span: 3;
   grid-column: 1;
   grid-area: s;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  box-orient: vertical;
-  box-direction: normal;
+
   flex-direction: column;
-  flex-direction: column;
-  box-pack: space-evenly;
-  flex-pack: space-evenly;
+
   justify-content: space-evenly;
-  box-align: center;
-  flex-align: center;
+
   align-items: center;
 }
 
@@ -281,8 +276,6 @@ button[type="submit"]:hover {
   height: 100%;
   border: 1px solid #40362E;
   border-radius: 10px;
-  display: box;
-  display: flexbox;
   display: flex;
   box-orient: vertical;
   box-direction: normal;
@@ -344,5 +337,5 @@ button[type="submit"]:hover {
 
 }
 @media screen and (max-width: 800px) {
-
+}
 /*# sourceMappingURL=style.css.map */
