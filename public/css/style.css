@@ -173,7 +173,6 @@ button[type="submit"]:hover {
 
 .page-wrapper {
   display: grid;
-  grid-columns: (300px)[3];
   grid-template-columns: repeat(3, 300px);
   column-gap: 1rem;
   row-gap: 1rem;
