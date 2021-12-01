@@ -1,23 +1,4 @@
-:root {
-  /*colors*/
-  --background-color: #F2E5D5;
-  --font-color: #595047;
-  --text-color: #40362E;
-  --block-color: #eceae8;
-
-  /*font*/
-  --font-family: Montserrat;
-  --normal-line-height: 1.5rem;
-  --h2-line-height: 2rem;
-  --normal-font-size: 16px;
-  --heading-font: 3rem;
-
-  /*img*/
-  --normal-size-img:400px;
-  --medium-size-img:200px;
-  --small-size-img:100px;
-  --border-radius: 10px;
-}
+@import "variables.css";
 *{
     margin: 0;
     box-sizing: border-box;
@@ -214,11 +195,8 @@ button[type="submit"]:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   flex-direction: column;
-
   justify-content: space-evenly;
-
   align-items: center;
 }
 
@@ -264,9 +242,7 @@ button[type="submit"]:hover {
 
 .page-wrapper .page-account-info {
   grid-row: 1;
-  grid-row-span: 2;
   grid-column: 2;
-  grid-column-span: 2;
   grid-area: f;
   background-color: white;
   padding: 1rem;
@@ -277,12 +253,8 @@ button[type="submit"]:hover {
   border: 1px solid #40362E;
   border-radius: 10px;
   display: flex;
-  box-orient: vertical;
-  box-direction: normal;
   flex-direction: column;
-  flex-direction: column;
-  box-pack: justify;
-  flex-pack: justify;
+
   justify-content: space-between;
 }
 
@@ -293,7 +265,6 @@ button[type="submit"]:hover {
 }
 
 .page-wrapper .page-account-info .page-account-upload .page-account-uploaded {
-  flex-item-align: end;
   align-self: flex-end;
 }
 
@@ -315,9 +286,7 @@ button[type="submit"]:hover {
 
 .page-wrapper .post-feed {
   grid-row: 3;
-  grid-row-span: 3;
   grid-column: 2;
-  grid-column-span: 2;
   grid-area: c;
   background-color: white;
   padding: 1rem;
