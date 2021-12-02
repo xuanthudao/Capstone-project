@@ -1,17 +1,17 @@
 @import "variables.css";
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background:var(--background-color);
     font-family: Montserrat, sans-serif;
     font-size: var(--normal-font-size);
     line-height: var(--normal-line-height);
     color: var(--text-color);
 }
-nav{
+nav {
     height: 11vh;
     width: 100%;
     background: var(--background-color);
@@ -19,14 +19,14 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav .logo{
+nav .logo {
     color: var(--text-color);
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
     margin: 0 30px;
 }
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
 }
@@ -46,7 +46,7 @@ nav ul li a:hover
 }
 .banner{
     height: 70vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("./img/bannerbg2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("../img/bannerbg2.jpg");
     width: 100%;
 }
 .banner .banner__inner-text {
@@ -70,7 +70,7 @@ main
     margin: 40px auto;
     align-self: center;
 }
-.content{
+.content {
     font-weight: 300;
 }
 
@@ -79,7 +79,7 @@ h2{
 }
 .info {
 }
-.info .card__content{
+.info .card__content {
     display: block;
     text-align: left;
     padding: 20px;
@@ -101,14 +101,14 @@ h2{
     border-radius: var(--border-radius);
 }
 /*form*/
-.form{
+.form {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.contact-text{
+.contact-text {
     text-align: center;
     padding: 20px;
 }
@@ -155,7 +155,7 @@ button[type="submit"]:hover {
     background-color: var(--font-color);
     color: white
 }
-.picture img{
+.picture img {
     border:solid;
     width: 50%;
 }
