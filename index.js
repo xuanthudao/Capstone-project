@@ -44,29 +44,4 @@ const UserSchema = new Schema(
 const User = mongoose.model("User", UserSchema);
 module.exports = User;
 
-/*const myForm = document.getElementById("my-form");
-const email = document.querySelector('input[name="email"]').value;
-const password = document.querySelector('input[name="password"]').value;*/
-
-/*//create user
-const createUser = async ({ firstName, lastName, email, password }) => {
-    try {
-        let newUser = new User();
-        newUser.firstName = firstName;
-        newUser.lastName = lastName;
-        newUser.email = email;
-        newUser.password = password;
-        if (await newUser.save()) {
-            return [true, newUser];
-        }
-    }
-};
-
-const checkUserByEmail = async (email) => await User.findOne({ email });
-
-//To validate user password
-const validatePassword = async (formPassword, dbPassword) =>
-    await compare(formPassword, dbPassword);*/
-
-
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));
