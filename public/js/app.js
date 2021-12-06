@@ -22,7 +22,7 @@ if (window.location.href.includes("login")) {
       });
       const responseData = await response.json();
       if (responseData.status === "ok") {
-        window.location.replace("/");
+        window.location.replace("/profile");
       } else {
         errorDisplay.textContent = responseData.data;
       }
@@ -59,7 +59,7 @@ if (window.location.href.includes("signup")) {
       const responseData = await response.json();
       console.log(responseData)
       if (responseData.status === "ok") {
-        window.location.replace("/");
+        window.location.replace("/profile");
       } else {
         errorDisplay.textContent = responseData.data;
       }
