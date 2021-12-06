@@ -191,8 +191,6 @@ button[type="submit"]:hover {
   grid-column: 1;
   grid-area: s;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
