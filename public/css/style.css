@@ -6,7 +6,7 @@
 
 body {
     background:var(--background-color);
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', 'Lato', sans-serif;
     font-size: var(--normal-font-size);
     line-height: var(--normal-line-height);
     color: var(--text-color);
@@ -50,8 +50,8 @@ nav ul li a:hover
     width: 100%;
 }
 .banner .banner__inner-text {
-    position:absolute; left:600px; top:300px;
-    font-family: Calibri, sans-serif;
+    position: absolute; left:600px; top:300px;
+    font-family: 'Lato', sans-serif;
     color: whitesmoke;
 }
 
