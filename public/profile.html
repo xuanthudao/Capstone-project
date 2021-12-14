@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Profile</title>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Be your Chef</a>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="recipe.html">Recipe</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Profile</a></li>
+  </ul>
+</nav>
+<div class="page" id="page-container">
+  <div class="page-wrapper">
+    <div class="page-account-sidebar">
+      <div class="page-profile-avatar">
+        <a href="#" target="_self">
+          <img src="./img/pfp.jpg" class="img-responsive" alt=""/>
+        </a>
+      </div>
+      <div class="page-account-sidebar-content">
+        <ul class="list">
+          <li>
+            <img src="./img/icons/heart2.png" alt=""/>
+            <a href="#" target="_self">Likes</a>
+          </li>
+          <li>
+            <img src="./img/icons/following.png" alt=""/>
+            <a href="#" target="_self">Photos</a>
+          </li>
+          <li>
+            <img src="./img/icons/camera1.png" alt=""/>
+            <a href="#" target="_self">Following</a>
+          </li>
+        </ul>
+      </div>
+      <div class="logout-button">
+        <button><a href="/logout">Log Out</a></button>
+      </div>
+    </div>
+    <div class="page-account-info">
+      <div class="page-account-upload">
+        <input
+          type="text"
+          id="post"
+          name="post"
+          size="50"
+          placeholder="Upload Something..."
+        />
+        <div class="page-account-uploaded">
+          <button><a href="#">Upload</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="post-feed">
+      <div class="post-feed-inner">
+        <p>You haven't posted anything yet :)</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
