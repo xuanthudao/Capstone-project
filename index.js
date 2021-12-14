@@ -21,6 +21,7 @@ app.use(
     })
 );
 app.use("/", require("./routes/pages"));
+app.use("/profile", require("./routes/profile"));
 //MongoDB connection
 mongoose.connect(
     `${url}`, { useNewUrlParser: true, useUnifiedTopology: true },

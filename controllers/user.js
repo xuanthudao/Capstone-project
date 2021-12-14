@@ -29,5 +29,14 @@ const checkUserByEmail = async (email) => await User.findOne({ email });
 //To validate user password
 const validatePassword = async (formPassword, dbPassword) =>
     await bcrypt.compare(formPassword, dbPassword);
+//search user by ID
 
-module.exports = { createUser, checkUserByEmail, validatePassword };
+const checkUserByIDandUpdate = async (id, imageURL) =>
+    User.findByIdAndUpdate(id, { image: imageURL }, { new: true });
+
+module.exports = {
+    createUser,
+    checkUserByEmail,
+    validatePassword,
+    checkUserByIDandUpdate,
+};
