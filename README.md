@@ -1,4 +1,4 @@
-                            **How to run Capstone-project**
+					**How to run Capstone-project**
 1. Go to https://www.mongodb.com/ and sign-in to create a database (Sign-up if you don't have an account)
 2. Choose create a free Database and create a cluster.
 3. Choose a username and password
