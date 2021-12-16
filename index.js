@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const session = require("express-session");
-const url = 'mongodb+srv://xuanthudao:xuanthu11@cluster0.92v5l.mongodb.net/Test?retryWrites=true&w=majority';
+const url = 'mongodb://localhost:27017/capstone';
 const {PORT = 4000} = process.env;
 
 //middlewares
