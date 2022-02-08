@@ -9,8 +9,9 @@ In this website, user can read information about cooking, surf for a recipe, sen
 MongoDB v5.0
 Nodejs v14.17.6
 ## Usage
-1. - For Window users: Follow instructions to install MongoDB at `https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/` (Window users must use the installer)
-- For other operating system: Follow instructions `https://docs.mongodb.com/manual/installation/`
+1. 
+- For Window users: Follow instructions to install MongoDB at https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/(Window users must use the installer)
+- For other operating system: Follow instructions https://docs.mongodb.com/manual/installation/
 2. Open a CLI window and cd to `C:\Program Files\MongoDB\Server\5.0\bin`
 3. Run command line `mongod` to start MongoDB Server
 4. Open another CLI window and navigate to Capstone-project on your local system
