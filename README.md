@@ -9,7 +9,7 @@ In this website, user can read information about cooking, surf for a recipe, sen
 MongoDB v5.0
 Nodejs v14.17.6
 ## Usage
-1. 
+1. Installation of MongoDB
 - For Window users: Follow instructions to install MongoDB at https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/(Window users must use the installer)
 - For other operating system: Follow instructions https://docs.mongodb.com/manual/installation/
 2. Open a CLI window and cd to `C:\Program Files\MongoDB\Server\5.0\bin`
@@ -18,5 +18,5 @@ Nodejs v14.17.6
 5. Run `npm i`
 6. Run `npm run dev`
 7. Go to `http://localhost:4000` in any browser.
-## Style guilde
+## Style guide
 ![Alt text](images/0001.jpg?raw=true "Style Guide") <br>
