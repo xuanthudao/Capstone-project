@@ -4,8 +4,8 @@ This is an informative cooking website, which also consist of a "contact" and "l
 and they learned how to cook. The intention was for the users at the age of 16-65+ have an easy access to the information and recipes needed for their busy day.
 I am a food-lover myself, and I started cooking and baking since I was 12. A lot of people belives that cooking only enjoyable when you have someone to cook for.
 But that's not always the case. I believe we can relish with meal we make and find some peace in the time of learning.
-In this website, user can read information about cooking, surf for a recipe, send us a message or create an account for yourself.
-![Alt text](images/s1.png?raw=true "homepage")<br>
+In this website, user can read information about cooking, surf for a recipe, send us a message or create an account for yourself. Here is how the page looks like.
+<br>![Alt text](images/s1.png?raw=true "homepage")<br>
 ## Requirements
 MongoDB v5.0
 Nodejs v14.17.6
@@ -20,4 +20,5 @@ Nodejs v14.17.6
 6. Run `npm run dev`
 7. Go to `http://localhost:4000` in any browser.
 ## Style guide
-![Alt text](images/0001.jpg?raw=true "Style Guide") <br>
+I also created a style guide for the design part of my website.
+<br>![Alt text](images/0001.jpg?raw=true "Style Guide") ![Alt text](images/0002.jpg?raw=true "Style Guide2") <br>
