@@ -8,7 +8,7 @@ But that's not always the case. I believe we can relish with meal we make and fi
 In this website, user can read information about cooking, surf for a recipe, send us a message or create an account for yourself. Here is how the page looks like.
 
 
-[Alt text](images/s1.png?raw=true "homepage")
+[Homepage image](images/s1.png?raw=true "homepage")
 
 ## Requirements
 MongoDB v5.0  
